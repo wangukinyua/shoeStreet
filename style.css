@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Muli|Poppins');
+
+:root {
+    --colorWhite:#ffffff;
+    --colorOrange:#f6b34e;
+    --colorGrey:#131313;
+    --colorGrey01:#9c9c9c;
+    --font--primary:'poppins';
+    --font--logo:'Montserrat';
+    --font--secondary:'muli';
+    --font--fallback:'sans-serif';
+}
+
+/* set defaults*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: var(--font--secondary);
+}
+
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.navbar{
+    width:100%;
+    height: auto;
+    position: fixed;
+    left:0;
+    right:0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar--nav{
+    position: relative;
+    height: 100px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--colorOrange);
+}
+
+.navbar--navigation{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 2px 6px rgb(000,000,000,0.1);
+    background: var(--colorWhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* endv of navbar section*/
+
+/* start of logo styling*/
+
+.logo{
+   position: absolute;
+   left: 30px;
+   color: var(--colorWhite);
+   font-family: var(--font--logo);
+   font-size: 22px;
+}
+
+.logo::first-letter{
+    font-size: 30px;
+
+}
+
+.logo--right{
+    color: var(--colorGrey);
+}
+
+.logo--right>span{
+    font-size: 30px;
+
+}
+
+/* start of serach input styling*/
+.search{
+    width: 35%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    padding: 0 30px;
+
+}
+
+.search:hover,
+.search:focus{
+    outline: none;
+}
+/* end of search input styling*/
+
+/* start of link styling*/
+.linkItems{
+    width: 400px;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkItems--link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--colorGrey);
+    padding: 0 10px;
+}
+
+.linkItems--link.active{
+    color: var(--colorGrey01);
+    background-color: rgba(246,179,78,0.2);
+    border-bottom: 2px solid var(--colorOrange);
+    
+}
+
+/* start footer styling section*/
+.footer{
+    width: 100%;
+    height: 80px;
+    background: var(--colorOrange);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+
+}
+/* end footer styling section*/
+
+/* styling main*/
+.main{
+    height:auto;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 120px;
+}
+/* end styling main*/
+.content{
+    margin:0 auto;
+    max-width: 810px;
+    
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+/* start card styling*/
+.card{
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: var(--colorWhite);
+    box-shadow: 0 2px 6px rgba(000,000,000,0.1);
+    margin: 10px;
+    
+}
+.card--imageWrapper{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid #f4f4f4;
+}
+.card--image{
+    
+    height: 200px;
+    
+}
+.card--content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.card--text{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.card--title{
+    font-family: var(--font--primary);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.card--subtitle{
+    font-size: 17px;
+    font-family: var(--font--secondary)
+}
+
+.card--actions{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+/*end of card styling*/
+
+/*buttons*/
+
+.btn{
+    border:none;
+    background: rgba(246,179,78,0.2);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 17px;
+    width:100px;
+    height: 40px;
+    border: 1px solid var(--colorOrange);
+    border-radius: 3px;
+    color: var(--colorOrange);
+}
+
+/* media queries*/
+
+/* media queries for phones*/
+@media only screen and (max-width: 37.5em){
+    .logo{
+        left:2px;
+        transform: scale(0.7);
+    }
+    
+}
+
+/*media query for tablets in portarit mode*/
+@media only screen and (max-width: 56.25em){}
+
+/*media query for tablets in landscape mode*/
+@media only screen and (max-width: 75em){}
+
+/*media queries for big desktops(bazenga)*/
+@media only screen and (max-width: 112.5em){}
+
+/*
+* 3 units of measurements in CSS: px,rem & em
+* px stands for pixels
+*a minute area of illumination on a display screen,
+ one of many from which an image is composed.
+*rem is a unit of measurement relative to the unit of measurement
+set at the root of the html
+*what is an em?
+* an em is a unit of measurement relative to the font size set by
+the browser
+*most browsers have a default font-size of 16px
+* often times one em is equal to 16px.
+
+37.5 * 16 =600
+56.25 * 16 =900
+75 * 16 =1200
+112.5 * 16 =1800    */

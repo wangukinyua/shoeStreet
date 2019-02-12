@@ -1,0 +1,49 @@
+npm - node package manager npm.com
+package.json
+git
+eslint
+webpack
+babel
+prettier
+
+Simple vs code tools to make your workflow easier
+1. Keybinding//shortcuts
+2. Themes
+
+ *night owl
+ *noctis
+ *dank neon
+ *shades of purple
+ *horizon
+ *colbat 2
+
+3. Extensions
+
+ a)Atom keymap
+ b)Auto close tags
+ c)Auto import
+ d)Auto rename
+ e)Bracket pair colorizer
+ f)Debugger for chrome
+ g)Eslint
+ h)Firebase
+ i)Gitlens
+ j)Material icon themes
+ k)Polacode
+ l)Prettier
+ m)Quokka.js
+ n)Visual studio intellicode
+ o)github pull requests
+
+
+ git init - initializes a git repo
+ git add{filename} - tracks the file added for changes
+ git add. - adds all files to be tracked
+ git status - checks the state of your working tree
+
+ U Flag stands for an untracked file
+ A Flag stands for a file that is being tracked by git
+ M Flag (GREEN) stands for a modified file without errors
+ M Flag (RED) stands for modified file with errors
+
+ 
